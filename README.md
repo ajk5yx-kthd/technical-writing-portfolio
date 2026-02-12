@@ -9,13 +9,15 @@ I'm a technical professional with a B.S. in Computer Engineering from the Univer
 
 ## Writing Samples
 
-### 1. [AI Tools for Code Documentation - Comparison Guide](./samples/ai-tools-comparison/)
-**Type:** Reference Documentation
-**Audience:** Experienced Developers  
+### 1. [ServiceNow Customer Service Management User Guide](./samples/servicenow-csm-guide/)
+**Type:** user Guide 
+**Audience:** Customer Service Representatives  
 **Skills demonstrated:**
-- Tool comparison and evaluation
-- Clear decision-making frameworks
-- Cost analysis and practical recommendations
+- Procedural documentation with step-by-step instructions
+- Enterprise software documentation
+- Task-oriented content organization
+- Best practices and troubleshooting guidance
+- Real-world examples and templates
 
 [More samples coming soon]
 
