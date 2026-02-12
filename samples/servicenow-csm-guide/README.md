@@ -100,10 +100,9 @@ Cases are the central record type in CSM, representing customer inquiries, issue
 1. Navigate to **Customer Service > Cases > Create New**
 2. Fill in required fields:
    - **Contact**: Select or create the customer contact
-   - **Subject**: Brief description of the issue (e.g., "Login error on mobile app")
+   - **Subject**: Brief description of the issue (e.g., "Login error")
    - **Description**: Detailed information about the customer's issue
    - **Category**: Select appropriate category (Technical, Billing, Account, etc.)
-   - **Priority**: System auto-calculates based on urgency and impact
 3. Click **Submit** to create the case
 
 **Method 2: Email-to-Case**
@@ -129,26 +128,20 @@ Understanding key case fields ensures accurate record-keeping:
 
 **Contact Information**
 - **Contact**: The person reporting the issue
-- **Account**: The company or organization (auto-populated from contact)
 - **Email**: Primary email for case updates
 - **Phone**: Contact number for urgent follow-up
 
 **Case Details**
 - **Subject**: One-line summary visible in lists and notifications
 - **Description**: Full details of the customer's issue or request
-- **Category**: Classifies the type of request (required for routing)
+- **Category**: Classifies the type of request
 - **Subcategory**: More specific classification within category
 
 **Assignment and Tracking**
 - **Assigned to**: Individual agent responsible for resolution
-- **Assignment group**: Team responsible (e.g., Tier 1 Support, Billing)
-- **State**: Current status (New, Open, Awaiting Info, Resolved, Closed)
-- **Priority**: Urgency level (1-Critical through 5-Planning)
-
-**Service Level Management**
-- **SLA**: Target response and resolution times
-- **Time to resolve**: Countdown showing time remaining
-- **Business resolve time**: Actual time spent (excludes customer wait time)
+- **Assignment group**: Team responsible (e.g., Billing)
+- **State**: Current status (e.g., Open, Resolved, Closed)
+- **Priority**: Importance of case (1-Critical, 2-High, 3-Medium, 4-Low, 5-Planning)
 
 ### Working a Case: Step-by-Step
 
@@ -157,8 +150,8 @@ Understanding key case fields ensures accurate record-keeping:
 When a case is assigned to you:
 1. Open the case from your queue or notification
 2. Read the **Description** field completely
-3. Review **Work Notes** and **Activity** for context
-4. Check if related cases exist (appears in **Related Lists**)
+3. Review **Work Notes** and **Activity** for added context
+4. Check if related cases exist 
 
 **Step 2: Acknowledge the Case**
 
@@ -185,7 +178,6 @@ Use available resources:
 - **Knowledge Base**: Search for articles related to the issue
 - **Related Cases**: Review how similar issues were resolved
 - **Product Documentation**: Access technical references
-- **Subject Matter Experts**: Use Connect Chat to consult specialists
 
 **Step 4: Document Your Work**
 
@@ -205,14 +197,14 @@ Checking with IT team on potential system-wide authentication issues.
 **Step 5: Resolve the Case**
 
 Once issue is resolved:
-1. Communicate solution to customer via **Customer Communication**
+1. Communicate solution to customer
 2. Include any follow-up steps customer should take
-3. Update **Resolution Code** (Fixed, Workaround Applied, Duplicate, etc.)
+3. Update **Resolution Code**
 4. Add **Resolution Notes** explaining the fix
 5. Set **State** to **Resolved**
 6. Click **Update**
 
-Cases automatically close after a configured period (typically 3-7 days) if customer doesn't reopen.
+If the customer is satisfied with the resolution, set the state to **Closed**. Cases may automatically move from Resolved to Closed after a configured period (for example, 3–7 days) if the customer does not respond.
 
 ### Case States and Workflow
 
@@ -222,19 +214,9 @@ Understanding case states helps you manage your workload:
 |-------|---------|-------------|
 | New | Just created, not yet acknowledged | System assigns this automatically |
 | Open | Being actively worked | Set when you begin working the case |
-| Awaiting Info | Waiting for customer response | Set when you need information from customer |
-| Awaiting Vendor | Waiting on third-party | Set when escalated to external vendor |
 | Resolved | Solution provided, awaiting confirmation | Set when issue is fixed |
 | Closed | Case complete, no further action | Auto-set after resolution period |
 | Cancelled | Invalid or duplicate case | Set when case shouldn't have been created |
-
-**State Transitions:**
-- New → Open: Agent begins work
-- Open → Awaiting Info: Need customer input
-- Awaiting Info → Open: Customer responds
-- Open → Resolved: Solution provided
-- Resolved → Closed: Auto-transition after 3-5 days
-- Resolved → Open: Customer reports issue persists
 
 ### Using Case Queues
 
@@ -258,14 +240,12 @@ Use filters to focus on specific case types:
 Save frequently used filters:
 1. Apply your filter criteria
 2. Click **Save filter** (filter icon at top)
-3. Name your filter (e.g., "High Priority Billing Cases")
+3. Name your filter (e.g., "High Priority Cases")
 4. Set visibility (Personal or Public if sharing with team)
 
 **Recommended Queue Views**
 - **By Priority**: Sort by Priority descending to handle critical cases first
-- **By SLA**: Filter for cases nearing SLA breach
 - **By Category**: Group similar cases for efficient batch processing
-- **Awaiting Customer**: Track cases waiting for customer response
 
 ---
 
@@ -301,7 +281,6 @@ The system automatically suggests relevant knowledge articles:
 2. View **Similar Articles** in right panel
 3. Click an article title to preview
 4. If helpful, click **Attach to Case** to link it
-5. Copy article steps into customer communication if needed
 
 **Manually Searching Knowledge:**
 1. Click **Search Knowledge** in right panel
@@ -314,11 +293,11 @@ The system automatically suggests relevant knowledge articles:
 
 Macros automate repetitive tasks with a single click.
 
-**Using Pre-Built Macros**
+**Example Macro Configuration**
 
 1. Open a case
 2. Click **Apply Macro** button (top right)
-3. Browse available macros (e.g., "Request More Info", "Escalate to Tier 2")
+3. Browse available macros (e.g., "Request More Info")
 4. Click macro name to apply
 
 **What Macros Can Do:**
@@ -328,8 +307,8 @@ Macros automate repetitive tasks with a single click.
 - Update multiple fields simultaneously
 
 **Example Macro: "Escalate to Technical Support"**
-- Sets Assignment Group to "Technical Support - Tier 2"
-- Adds work note: "Escalating to Tier 2 for advanced troubleshooting"
+- Sets Assignment Group to "Technical Support"
+- Adds work note: "Escalating for advanced troubleshooting"
 - Sends customer email: "Your case has been escalated to our technical team"
 - Changes Priority to 2-High
 
@@ -338,26 +317,6 @@ Macros automate repetitive tasks with a single click.
 2. Click **New**
 3. Configure actions, field updates, and communications
 4. Save and share with team
-
-### Quick Actions
-
-Speed up common tasks with Quick Actions panel:
-
-**Transfer Case**
-1. Click **Transfer** in Quick Actions
-2. Select new Assignment Group or Assigned To
-3. Add transfer reason in work notes
-4. Click **Transfer**
-
-**Add Watchlist**
-1. Click **Add to Watchlist**
-2. Enter colleague's name
-3. They'll receive notifications on case updates
-
-**Request Task**
-1. Click **Create Task**
-2. Assign task to another team (e.g., IT for account provisioning)
-3. Case remains in "Awaiting Task" until task completes
 
 ### Timeline and Activity History
 
@@ -395,17 +354,16 @@ Knowledge articles help resolve cases faster by providing standardized solutions
 3. Press Enter to see results
 4. Click article title to view full content
 
-**Advanced Search Filters:**
+**Common Search Filters:**
 - **Category**: Filter by product area or topic
 - **Published**: Only show approved articles
-- **Valid**: Filter by articles within validity date range
 - **Rating**: Sort by most helpful articles
 
 **Search Tips for Better Results:**
 - Use specific product names or error codes
 - Include symptoms, not just product names (e.g., "email bouncing" not just "email")
 - Try different phrasings if first search yields no results
-- Use quotes for exact phrases: "error code 500"
+- Use quotes for exact phrases
 
 ### Using Knowledge Articles
 
@@ -423,7 +381,6 @@ Articles typically contain:
 2. Click **Attach to Case**
 3. Select the case from dropdown
 4. Article is now linked in case's Related Lists
-5. Copy resolution steps into customer communication
 
 **Rating Articles**
 
@@ -433,20 +390,11 @@ Help improve knowledge quality:
 3. Add comment if article needs improvement
 4. Submit rating
 
-**Flagging Outdated Articles**
-
-If an article contains incorrect information:
-1. Click **Flag Article** button
-2. Select reason (Outdated, Incorrect, Unclear)
-3. Add details about the issue
-4. Submit for review by knowledge team
-
 ### Creating Knowledge Articles
 
 Share solutions with your team by creating articles:
 
 **When to Create an Article:**
-- You've solved a novel or complex issue
 - Multiple customers report the same problem
 - A workaround exists for a known bug
 - New product feature needs documentation
@@ -455,11 +403,11 @@ Share solutions with your team by creating articles:
 
 1. Navigate to **Knowledge > Create New Article**
 2. Fill in required fields:
-   - **Short Description**: Clear, searchable title (e.g., "Unable to reset password on mobile app")
+   - **Short Description**: Clear, searchable title
    - **Category**: Appropriate classification
-   - **Article Body**: Full resolution steps
-3. Use the template structure:
-
+   - **Article Body**: Full description
+  
+For example, use this template structure when detailing a resolved problem:
 ```
 Problem:
 [Describe the symptom or error the customer experiences]
@@ -483,7 +431,7 @@ Notes:
 5. Knowledge manager reviews and publishes
 
 **Article Best Practices:**
-- Write in clear, plain language (avoid jargon)
+- Write in clear, plain language
 - Number all steps for easy following
 - Include screenshots for visual clarity
 - Test your own steps before submitting
@@ -533,25 +481,6 @@ Templates ensure consistent, professional communication.
 5. Customize message as needed
 6. Click **Post** to send
 
-**Available Templates:**
-
-| Template Name | When to Use |
-|---------------|-------------|
-| Case Acknowledgment | First response confirming receipt |
-| Request More Information | Need additional details from customer |
-| Case Resolved | Solution provided, closing case |
-| Escalation Notice | Case transferred to another team |
-| Scheduled Maintenance | Proactive notification of system changes |
-| Follow-up Check | Verify customer satisfaction post-resolution |
-
-**Template Variables:**
-
-Templates use variables that auto-populate:
-- `${contact.name}` - Customer's name
-- `${number}` - Case number
-- `${short_description}` - Case subject
-- `${assigned_to.name}` - Your name
-
 **Example Template Structure:**
 
 ```
@@ -574,14 +503,7 @@ ${assigned_to.title}
 
 ### Writing Effective Customer Messages
 
-**Tone and Style Guidelines:**
-
-- **Professional but friendly**: Avoid overly formal or casual language
-- **Clear and concise**: Get to the point quickly
-- **Empathetic**: Acknowledge customer frustration
-- **Action-oriented**: Tell customer exactly what happens next
-
-**Message Structure:**
+**Message Structure Guidelines:**
 
 1. **Greeting**: Use customer's name
 2. **Acknowledgment**: Reference their specific issue
@@ -664,32 +586,6 @@ Michael Chen
 Customer Support Specialist
 ```
 
-### Communication Best Practices
-
-**Response Time Expectations:**
-- **Critical Priority**: Respond within 1 hour
-- **High Priority**: Respond within 4 hours
-- **Medium Priority**: Respond within 8 business hours
-- **Low Priority**: Respond within 24 business hours
-
-**Dos:**
-- Personalize messages with customer's name
-- Acknowledge wait times and apologize if delayed
-- Provide specific timeframes for follow-up
-- Double-check technical details before sending
-- Use spell-check and grammar tools
-- Include case number in every message
-
-**Don'ts:**
-- Don't use all caps (appears as shouting)
-- Don't blame the customer for the issue
-- Don't make promises you can't keep
-- Don't use company jargon or acronyms
-- Don't copy/paste without personalizing
-- Don't end with "let me know if you have questions" without offering specific help
-
----
-
 ## Reporting and Analytics
 
 Track performance and identify improvement opportunities with built-in reporting.
@@ -718,7 +614,7 @@ Track performance and identify improvement opportunities with built-in reporting
 
 ### Key Performance Indicators (KPIs)
 
-Understanding metrics helps you improve service quality:
+Understanding metrics helps you improve service quality. Here are some example metrics and targets to shoot for:
 
 **First Contact Resolution (FCR)**
 - Percentage of cases resolved in first interaction
@@ -727,7 +623,7 @@ Understanding metrics helps you improve service quality:
 
 **Average Handle Time (AHT)**
 - Average time from case open to resolution
-- **Target**: Varies by category (typically 24-48 hours)
+- **Target**: Varies by category (ideally 24-48 hours)
 - **How to improve**: Efficient workflows, macros, knowledge articles
 
 **Customer Satisfaction Score (CSAT)**
@@ -735,17 +631,12 @@ Understanding metrics helps you improve service quality:
 - **Target**: 4.0 or higher
 - **How to improve**: Clear communication, timely updates, follow-through
 
-**Service Level Agreement (SLA) Compliance**
-- Percentage of cases meeting SLA targets
-- **Target**: 95% or higher
-- **How to improve**: Prioritize queue by SLA, set reminders, escalate early
-
 ### Running Reports
 
 **Pre-Built Reports**
 
 1. Navigate to **Reports > View/Run**
-2. Search for report name (e.g., "Cases by Agent")
+2. Search for report name
 3. Click report name
 4. Adjust filters if needed (date range, assignment group)
 5. Click **Run**
@@ -756,9 +647,10 @@ Understanding metrics helps you improve service quality:
 - **Cases by Category**: Volume breakdown by request type
 - **Resolution Time Trends**: Average time to resolve over time periods
 - **Reopened Cases**: Cases that were resolved but reopened by customer
-- **SLA Performance**: Cases meeting vs. breaching SLA targets
 
 **Exporting Reports**
+
+For users with permission to export and scheudle reports:
 
 1. Run the report you want to export
 2. Click **Export** dropdown (top right)
@@ -775,126 +667,29 @@ Send reports automatically:
 2. Click **Schedule** button
 3. Set frequency (Daily, Weekly, Monthly)
 4. Enter recipient email addresses
-5. Choose format (PDF or Excel)
+5. Choose format (PDF or Excel Spreadsheet)
 6. Click **Schedule**
 
 ### Using Analytics for Improvement
 
 **Identifying Trends**
 
-Review reports monthly to spot patterns:
+Review reports to spot patterns:
 - **Spike in specific category**: May indicate product issue or need for knowledge article
 - **High average handle time**: Could signal training opportunity or process inefficiency
 - **Low CSAT scores**: Review customer feedback to identify service gaps
-- **SLA breaches in certain hours**: May need staffing adjustment
 
 **Taking Action on Insights**
 
 Based on reporting data:
 1. **High volume in category**: Create knowledge article to deflect future cases
-2. **Long resolution times**: Identify bottleneck (vendor delays, approval processes)
+2. **Long resolution times**: Identify bottleneck
 3. **Repeated cases from same account**: Proactive outreach to address root cause
 4. **Low knowledge article usage**: Training on knowledge search techniques
 
 ---
 
-## Best Practices
-
-### Case Management Excellence
-
-**Prioritization Strategy**
-1. Address SLA breach risk first (sort by Time to Resolve)
-2. Handle critical/high priority before lower priorities
-3. Group similar cases to batch process efficiently
-4. Don't cherry-pick easy cases - balance workload
-
-**Quality Documentation**
-- Write work notes assuming another agent will take over
-- Include specific error messages, not just "customer has error"
-- Note troubleshooting steps attempted and results
-- Document customer commitments (callbacks, follow-up dates)
-
-**Proactive Communication**
-- Update customers before they ask for status
-- Set expectations on resolution timeframes
-- Notify customers immediately if issues take longer than expected
-- Follow up after resolution to ensure satisfaction
-
-### Knowledge Base Utilization
-
-**Search First, Escalate Second**
-- Always search knowledge before escalating to specialists
-- Use multiple search terms if first attempt yields no results
-- Review similar cases to see how colleagues resolved issues
-- Bookmark frequently used articles for quick access
-
-**Contribute Back**
-- Document unique solutions you discover
-- Submit new articles for common issues
-- Update existing articles with additional troubleshooting steps
-- Rate articles to help others find best solutions
-
-### Customer Experience Focus
-
-**Empathy in Service**
-- Acknowledge customer frustration or inconvenience
-- Use phrases like "I understand how important this is" or "I'd feel the same way"
-- Take ownership even if issue wasn't caused by your team
-- Thank customers for their patience
-
-**Clear Expectations**
-- Tell customers exactly when they'll hear from you next
-- Explain what you're doing to resolve their issue
-- Be realistic about timelines - under-promise, over-deliver
-- If you don't know something, say so and commit to finding out
-
-**Follow-Through**
-- If you commit to a callback, set a reminder and do it
-- Check in on escalated cases even if assigned to another team
-- Close the loop - confirm with customer that issue is truly resolved
-- Document lessons learned for future similar cases
-
-### Time Management
-
-**Queue Management**
-- Review your queue at start of shift and set priorities
-- Block time for complex cases (don't constantly switch contexts)
-- Use "Awaiting Info" state to park cases waiting on customers
-- Set aside time daily for administrative tasks (updating notes, completing surveys)
-
-**Avoid Burnout**
-- Take breaks between difficult cases
-- Use macros and templates to reduce repetitive work
-- Ask for help when stuck - don't spend hours on one case
-- Celebrate wins (resolved complex cases, positive customer feedback)
-
-### Continuous Improvement
-
-**Learn from Feedback**
-- Review customer satisfaction survey comments
-- Ask your manager for coaching on low-rated interactions
-- Study how top performers handle similar cases
-- Attend training sessions on new features or processes
-
-**Stay Updated**
-- Read release notes when ServiceNow is updated
-- Check team announcements for process changes
-- Participate in team meetings and share best practices
-- Request training on areas where you feel less confident
-
----
-
 ## Quick Reference
-
-### Common Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| Ctrl + Alt + F | Open global search |
-| Ctrl + Shift + S | Save current form |
-| Ctrl + Shift + I | Open impersonation dialog |
-| Alt + Left Arrow | Navigate back |
-| Alt + Right Arrow | Navigate forward |
 
 ### Field Definitions Quick Lookup
 
@@ -903,17 +698,16 @@ Based on reporting data:
 | Contact | Person who reported the issue |
 | Account | Company or organization contact belongs to |
 | Assignment Group | Team responsible for resolving case |
-| Priority | Urgency level (1=Critical to 5=Planning) |
+| Priority | Importance level |
 | State | Current status in case lifecycle |
 | Category | Type classification for routing |
 | SLA | Service level agreement with target times |
-| Resolution Code | Reason case was resolved (Fixed, Duplicate, etc.) |
+| Resolution Code | Reason case was resolved |
 
 ### Case State Quick Reference
 
 - **New**: Just created, not yet worked
 - **Open**: Currently being worked
-- **Awaiting Info**: Waiting for customer response
 - **Resolved**: Solution provided, customer notification sent
 - **Closed**: Case complete, no further action needed
 
@@ -921,51 +715,8 @@ Based on reporting data:
 
 ## Getting Help
 
-### Support Resources
-
-**Internal Support**
-- **ServiceNow Admin**: Contact for system access, permission issues
-- **Team Lead**: Escalate complex cases, request case reassignment
-- **Subject Matter Experts**: Consult for specialized product knowledge
-
-**Documentation**
+**Support Resources**
 - **ServiceNow Docs**: docs.servicenow.com
-- **Internal Wiki**: Your company's process documentation
-- **Training Portal**: Video tutorials and guided learning
-
-**Community**
 - **ServiceNow Community**: community.servicenow.com
-- **User Groups**: Local or virtual meetups
-- **Team Slack/Teams Channel**: Quick questions to colleagues
-
-### Contact Information
-
-For technical issues with ServiceNow platform:
-- **IT Service Desk**: Submit incident via portal or email servicedesk@yourcompany.com
-- **Phone**: (555) 123-4567 (24/7 support)
-
-For process questions or training:
-- **Customer Service Manager**: manager@yourcompany.com
-- **Training Team**: training@yourcompany.com
 
 ---
-
-## Appendix: Glossary
-
-**Agent Workspace**: Unified interface for managing customer cases
-
-**Assignment Group**: Team or department responsible for case resolution
-
-**Case**: Record representing customer inquiry, issue, or request
-
-**CSAT**: Customer Satisfaction Score, survey rating from customers
-
-**FCR**: First Contact Resolution, cases resolved in single interaction
-
-**Knowledge Article**: Documented solution for common issues
-
-**Macro**: Automated action that updates multiple case fields at once
-
-**SLA**: Service Level Agreement, target response and resolution times
-
-**Work Notes**: Internal case documentation not visible to customers
