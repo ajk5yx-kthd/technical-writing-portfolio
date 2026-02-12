@@ -1,6 +1,6 @@
 # Technical Writing Portfolio
 
-**Author:** Andrew Kremp 
+**Author:** Andrew Kremp  
 **Contact:** kremp.andrew@gmail.com  
 
 ## About Me
