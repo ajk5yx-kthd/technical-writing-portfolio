@@ -16,7 +16,6 @@
 5. [Knowledge Management](#knowledge-management)
 6. [Customer Communications](#customer-communications)
 7. [Reporting and Analytics](#reporting-and-analytics)
-8. [Best Practices](#best-practices)
 
 ---
 
