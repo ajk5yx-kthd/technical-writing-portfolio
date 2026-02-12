@@ -10,7 +10,7 @@ I'm a technical professional with a B.S. in Computer Engineering from the Univer
 ## Writing Samples
 
 ### 1. [ServiceNow Customer Service Management User Guide](./samples/servicenow-csm-guide/)
-**Type:** user Guide 
+**Type:** User Guide  
 **Audience:** Customer Service Representatives  
 **Skills demonstrated:**
 - Procedural documentation with step-by-step instructions
