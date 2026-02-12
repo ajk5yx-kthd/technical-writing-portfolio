@@ -28,4 +28,4 @@ I believe effective technical documentation should be:
 
 ---
 
-*This portfolio demonstrates writing samples created for evaluation purposes. All code examples are original work.*
+*This portfolio demonstrates writing samples created for evaluation purposes.*
