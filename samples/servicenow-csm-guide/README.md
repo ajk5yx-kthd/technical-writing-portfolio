@@ -3,7 +3,7 @@
 **Version:** 1.0  
 **Platform:** ServiceNow Customer Service Management (CSM)  
 **Last Updated:** February 2026  
-**Target Audience:** Customer Service Representatives, Team Leads, Administrators
+**Target Audience:** Customer Service Representatives
 
 ---
 
