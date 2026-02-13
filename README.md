@@ -19,6 +19,17 @@ I'm a technical professional with a B.S. in Computer Engineering from the Univer
 - Best practices and troubleshooting guidance
 - Real-world examples and templates
 
+### 2. [Social Media Analytics Platform](./samples/social-media-api-strategy-guide/)
+**Type:** Product documentation  
+**Audience:** Marketing Strategists, Business Analysts, Content Managers  
+**Skills demonstrated:**
+- API integration strategy documentation
+- Multi-platform data aggregation explanation
+- Business intelligence and analytics documentation
+- Product capabilities and use case documentation
+- Natural language explanation of technical systems
+- Real-world examples and templates
+
 [More samples coming soon]
 
 ## Documentation Philosophy
