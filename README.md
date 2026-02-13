@@ -20,7 +20,7 @@ I'm a technical professional with a B.S. in Computer Engineering from the Univer
 - Real-world examples and templates
 
 ### 2. [Social Media Analytics Platform Product Documentation](./samples/social-media-api-strategy-guide/)
-**Type:** Product documentation  
+**Type:** Product Documentation  
 **Audience:** Marketing Strategists, Business Analysts, Content Managers  
 **Skills demonstrated:**
 - API integration strategy documentation
