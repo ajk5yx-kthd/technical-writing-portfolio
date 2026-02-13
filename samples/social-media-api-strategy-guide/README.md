@@ -50,9 +50,7 @@ in successful content, and generating specific recommendations for future posts.
 
 ### Data Collection Strategy
 
-The platform operates on a scheduled collection cycle, typically gathering fresh data every six hours. This frequency balances API rate limits 
-with the need for current information. During each collection cycle, the system retrieves new posts, updated engagement metrics for existing posts, 
-fresh comments from active discussions, and trending content signals from each platform.
+The platform operates on a manual collection cycle, gathering fresh data whenever a user requests a new search. During each collection cycle, the system retrieves new posts, updated engagement metrics for existing posts, fresh comments from active discussions, and trending content signals from each platform.
 
 The collected data includes both quantitative metrics (views, likes, shares, watch time) and qualitative information (comment text, caption content, 
 hashtags used). This combination enables both statistical analysis of what performs well numerically and semantic analysis of what resonates with people emotionally.
@@ -84,9 +82,9 @@ even if algorithmic distribution was limited.
 
 **Hashtag Performance Analysis**
 
-Instagram allows searching for content using specific hashtags and analyzing performance. By querying the API for posts tagged with particular hashtags, we can see which tags appear on high-performing content versus low-performing content. This reveals which hashtags actually drive discovery versus which are simply popular but don't improve reach.
+Instagram allows searching for content using specific hashtags and analyzing performance. By querying the API for posts tagged with particular hashtags, we can see which tags appear on high-performing content versus low-performing content. This reveals whether there are particular hashtags that actually drive discovery.
 
-The system tracks hashtag combinations, not just individual tags. A post using #fitness and #nutrition together might perform differently than posts using only one. By analyzing thousands of posts, patterns emerge showing which hashtag combinations work synergistically.
+The system tracks hashtag combinations, not just individual tags. A post using #fitness and #nutrition together, for example, might perform differently than posts using only one. By analyzing thousands of posts, patterns emerge showing which hashtag combinations work synergistically.
 
 **Audience Demographics and Behavior**
 
@@ -96,17 +94,15 @@ The API also reveals which content drives follower growth versus which generates
 
 **Comment Collection and Analysis**
 
-Every comment and reply on posts is accessible through the API. We retrieve the comment text, the username of who posted it, when it was posted, and how many likes the comment received. This creates a dataset of authentic audience reactions expressed in natural language.
+Every comment and reply on posts is accessible through the API. We retrieve the comment text, when it was posted, and how many likes the comment received. This creates a dataset of authentic audience reactions expressed in natural language.
 
-Unlike simple engagement metrics, comments reveal what people are actually thinking and feeling about content. A post might have many likes but comments expressing confusion, or it might have fewer likes but comments showing deep appreciation or requesting more similar content. Comment analysis uncovers this nuance.
+Unlike simple engagement metrics, comments reveal what people are actually thinking and feeling about content. A post might have many likes but comments expressing confusion, or it might have fewer likes but comments showing deep appreciation or requesting more similar content.  
 
 ### How Instagram Data Informs Strategy
 
 The Instagram integration primarily identifies which visual content styles and caption approaches resonate with audiences. Because Instagram is highly visual and algorithm-driven, success on the platform depends on creating immediately compelling imagery paired with captions that encourage engagement.
 
-By analyzing performance data, we identify whether carousel posts outperform single images, whether video content gets more reach than static posts, what caption lengths correlate with higher engagement, and which calls-to-action (questions, prompts to tag friends, etc.) generate the most responses.
-
-The audience timing data reveals optimal posting windows specific to your followers. Generic advice might suggest posting at 9 AM, but your audience might be most active at 7 PM on weekdays and 11 AM on weekends. The Instagram API provides this granular timing intelligence.
+By analyzing performance data, one can discover the content that works best for their particular audience. They can identify whether carousel posts outperform single images, whether video content gets more reach than static posts, what caption lengths correlate with higher engagement, which calls-to-action generate the most responses, and many more revealing insights helping maximize the Instagram platform.
 
 ---
 
@@ -120,19 +116,19 @@ TikTok's Research API is designed for analyzing public content and trends at sca
 
 The Research API allows searching for videos using keywords, hashtags, or sounds. When you search for videos related to "productivity tips," the API returns matching videos along with comprehensive metadata: the video description, the creator's username, the publication date, which sound or music was used, what effects were applied, video duration, and hashtag tags.
 
-This broad search capability means we can analyze not just your content but also identify what's working for others in your niche. If you create fitness content, we can search for top-performing fitness videos from the past month and analyze their common characteristics.
+This broad search capability means we can analyze not just your content but also identify what's working for others in your niche. If you create cooking videos, we can search for top-performing content in that niche from the past month and analyze their common characteristics.
 
 **Engagement Metrics at Scale**
 
-For each video, TikTok provides view counts, like counts, comment counts, share counts, and the video completion rate. The completion rate is particularly valuable on TikTok because the algorithm heavily weights whether viewers watch videos all the way through. A video with a 70% completion rate will get more algorithmic promotion than one with 40% completion, even if the latter has more total views.
+For each video, TikTok provides view counts, like counts, comment counts, share counts, and video completion rate. The completion rate is particularly valuable on TikTok because the algorithm heavily weights whether viewers watch videos all the way through. A video with a 70% completion rate will get significantly more algorithmic promotion than one with 40% completion, even if the latter has more total views.
 
-By analyzing thousands of videos in your content niche, we identify the optimal video length for your specific topic. Fitness tutorials might perform best at 45 seconds while recipe videos might need 90 seconds to maintain completion rates.
+By analyzing thousands of videos in your content niche, we identify the optimal video length for your specific topic.
 
 **Trending Sounds and Effects**
 
-TikTok's algorithm favors content using trending sounds. The Research API reveals which sounds are currently gaining traction and which are declining in usage. More importantly, it shows how videos using specific sounds perform across different content categories.
+TikTok's algorithm favors content using trending sounds. The Research API reveals which sounds are currently gaining traction and which are declining in usage. More importantly, it shows how videos using specific sounds perform across different content categories. For example, a trending sound in the dance community might not work for educational content.  
 
-A trending sound in the dance community might not work for educational content. The API data reveals which trending sounds are being successfully adapted to your content vertical, giving you early access to trends before they become oversaturated.
+The API data reveals which trending sounds are being successfully adapted to your content vertical, giving you early access to trends before they become oversaturated.
 
 **Comment Sentiment and Requests**
 
