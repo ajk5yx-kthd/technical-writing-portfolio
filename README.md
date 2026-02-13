@@ -19,7 +19,7 @@ I'm a technical professional with a B.S. in Computer Engineering from the Univer
 - Best practices and troubleshooting guidance
 - Real-world examples and templates
 
-### 2. [Social Media Analytics Platform](./samples/social-media-api-strategy-guide/)
+### 2. [Social Media Analytics Platform Product Documentation](./samples/social-media-api-strategy-guide/)
 **Type:** Product documentation  
 **Audience:** Marketing Strategists, Business Analysts, Content Managers  
 **Skills demonstrated:**
