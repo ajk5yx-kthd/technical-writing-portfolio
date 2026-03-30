@@ -5,7 +5,7 @@
 
 ## About Me
 
-I'm a technical professional with a B.S. in Computer Engineering from the University of Virginia who has experience developing templates and guides for both technical and non-technical SaaS users. I've created this sample portfolio to showcase my technical documentation style.
+I'm a technical professional with a B.S. in Computer Engineering from the University of Virginia who has experience developing templates and guides for both technical and non-technical users. I've created this sample portfolio to showcase my technical documentation style.
 
 ## Writing Samples
 
